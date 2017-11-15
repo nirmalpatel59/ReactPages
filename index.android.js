@@ -13,6 +13,7 @@ import {
 // import axios from 'axios';
 import Header from './src/components/Header';
 import ResultBoard from './src/components/ResultPage';
+import ListingPage from './src/components/ListingPage';
 
 export default class resultPage extends Component {
   // componentWillMount() {
@@ -22,12 +23,13 @@ export default class resultPage extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Header
+        {/* <Header
           headerStyle={styles.headerStyle}
-          headerText='ResultBoard'
+          headerText='ListingPage'
           headerTextStyle={styles.headerTextStyle}
-        />
-        <ResultBoard />
+        /> */}
+        <ListingPage />
+        {/* <ResultBoard /> */}
       </View>
     );
   }
